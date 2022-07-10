@@ -1,0 +1,52 @@
+.body {
+	display: block;
+	width: 100%;
+	transition-duration: 1.2s;
+	transition-timing-function: ease-in-out;
+	transform: scale(0);
+}
+
+body:hover .body {
+	transform: scale(1);
+}
+.brand{
+    perspective: 800px;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+.brand:hover img{
+    transform: translate3d(10px, 10px, 10px);
+}
+a:hover{
+    color: navy;
+    transform: translateX(5px);
+}
+a::after{
+    content: "";
+    width: 0;
+    height: 4px;
+    display: block;
+    background-color: orangered;
+    transition: all 0.4s;
+}
+a:hover::after{
+    width: 100%;
+}
+.last>div:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+.middle-container>h2{
+    transform: scale(0.6);
+    transition: all 3s ease-in-out;
+}
+.middle-container>h2:hover{
+    transform: scale(1) rotate(360deg);
+}
+.comment>div{
+    transition: all 1s ease-in-out;
+    box-shadow: 4px 5px 9px gray;
+}
+.comment>div:hover{
+    transform: translate3d(15px,30px,20px);
+}
